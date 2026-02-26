@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0d0d0d">
+    <title>Apresiasi Karya Seni Rupa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-dot"></span>
+                <span>Apresiasi</span>
+            </div>
+            <button class="burger" id="burger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="nav">
+                <a href="#" class="nav-link active" data-section="home">Home</a>
+                <a href="#" class="nav-link" data-section="gambar">Gambar</a>
+                <a href="#" class="nav-link" data-section="video">Video</a>
+                <a href="#" class="nav-link" data-section="identitas">Identitas</a>
+                <a href="#" class="nav-link" data-section="daftarpustaka">Daftar Pustaka</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+
+        <section id="home" class="section active">
+
+            <div class="bg-deco">
+                <div class="deco-circle c1"></div>
+                <div class="deco-circle c2"></div>
+                <div class="deco-line l1"></div>
+                <div class="deco-line l2"></div>
+            </div>
+
+            <div class="ppt-shell">
+
+                <!-- Slide Track -->
+                <div class="ppt-track-wrap">
+                    <div class="ppt-track" id="pptTrack">
+
+                        <!-- SLIDE 1 — DESKRIPSI -->
+                        <div class="ppt-slide" data-index="0">
+                            <div class="slide-num">01</div>
+                            <div class="slide-tag">Gereja Blenduk</div>
+                            <h2 class="slide-title">Deskripsi</h2>
+                            <div class="slide-divider"></div>
+                            <p class="slide-body">
+                                Bangunan ini punya atap berbentuk kubah besar di bagian tengah. Bagian depan terdapat dua menara di sisi kanan dan kiri. Dinding bangunan didominasi warna putih, sedangkn kubah berwarna lebih gelap. Di bagian depan terlihat beberapa tiang penyangga yang berjajar. Pintu utama berada di tengah bangunan dan di atasnya Terdapat jendela-jendela berukuran cukup besar.
+                            </p>
+                            <div class="slide-icon">📋</div>
+                        </div>
+
+                        <!-- SLIDE 2 — ANALISIS -->
+                        <div class="ppt-slide" data-index="1">
+                            <div class="slide-num">02</div>
+                            <div class="slide-tag">Gereja Blenduk</div>
+                            <h2 class="slide-title">Analisis</h2>
+                            <div class="slide-divider"></div>
+                            <p class="slide-body">
+                                Bangunan ini memiliki garis vertikal pada tiang dan menara yang memberi kesan kuat dan tinggi, garis lengkung pada kubah berwarna merah bata tua dengan kode warna #F8F8F8 membuat tampilan lebih halus dan tidak kaku. Bentuk geometris teratur dan tertata. Warna putih murni dengan kode warna #FFFFFF memberikan kesan tenang dan bersih. Prinsip yang paling terlihat adalah keseimbangan simetris dan penekanan pada kubah sebagai titik fokus.
+                            </p>
+                            <div class="slide-icon">🔍</div>
+                        </div>
+
+                        <!-- SLIDE 3 — INTERPRETASI -->
+                        <div class="ppt-slide" data-index="2">
+                            <div class="slide-num">03</div>
+                            <div class="slide-tag">Gereja Blenduk</div>
+                            <h2 class="slide-title">Interpretasi</h2>
+                            <div class="slide-divider"></div>
+                            <p class="slide-body">
+                                Kubah besar pada bangunan dapat dimaknai sebagai simbol keagungan dan perlindungan. Bentuk simetris memberi kesan yang konsisten. Warna putih bisa diartikan sebagai kesucian dan kedamaian. Secara keseluruhan, bangunan ini menunjukkan kekuatan dan keteguhan melalui bentuknya yang kokoh.
+                            </p>
+                            <div class="slide-icon">💡</div>
+                        </div>
+
+                        <!-- SLIDE 4 — EVALUASI -->
+                        <div class="ppt-slide" data-index="3">
+                            <div class="slide-num">04</div>
+                            <div class="slide-tag">Gereja Blenduk</div>
+                            <h2 class="slide-title">Evaluasi</h2>
+                            <div class="slide-divider"></div>
+                            <p class="slide-body">
+                                Bangunan ini memiliki nilai estetika yang tinggi karena bentuknya jelas, rapi, dan memiliki ciri khas yang kuat melalui kubahnya. Susunan tiang yang teratur membuat tampilannya enak dilihat. Gereja Blenduk layak diapresiasi sebagai karya arsitektur dengan nilai tinggi.
+                            </p>
+                            <div class="slide-icon">✅</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Bottom Controls -->
+                <div class="ppt-controls">
+                    <button class="ppt-btn" id="prevBtn" aria-label="Sebelumnya">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                    </button>
+
+                    <div class="ppt-dots" id="pptDots">
+                        <button class="pdot active" data-idx="0"></button>
+                        <button class="pdot" data-idx="1"></button>
+                        <button class="pdot" data-idx="2"></button>
+                        <button class="pdot" data-idx="3"></button>
+                    </div>
+
+                    <span class="ppt-counter" id="pptCounter">1 / 4</span>
+
+                    <button class="ppt-btn" id="nextBtn" aria-label="Selanjutnya">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
+                    </button>
+                </div>
+
+
+                <!-- Keyboard hint -->
+                <p class="ppt-hint">← → untuk navigasi &nbsp;|&nbsp; geser untuk mobile</p>
+
+                <!-- ── MUSIC PLAYER ── -->
+                <div class="music-player" id="musicPlayer">
+                    <div class="music-disc" id="musicDisc">
+                        <div class="disc-inner">🎵</div>
+                    </div>
+                    <div class="music-info">
+                        <p class="music-title" id="musicTitle">Golden Brown - The Stranglers</p>
+                        <p class="music-artist" id="musicArtist">Slowed + Reverb Version</p>
+                        <div class="music-progress-wrap">
+                            <span class="music-time" id="musicCurrent">0:00</span>
+                            <div class="music-progress" id="musicProgress">
+                                <div class="music-progress-fill" id="musicProgressFill"></div>
+                                <div class="music-progress-thumb" id="musicProgressThumb"></div>
+                            </div>
+                            <span class="music-time" id="musicDuration">0:00</span>
+                        </div>
+                    </div>
+                    <div class="music-controls">
+                        <button class="mc-btn" id="mcPrev" title="Sebelumnya" style="display:none;">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg>
+                        </button>
+                        <button class="mc-btn mc-play" id="mcPlay" title="Play/Pause">
+                            <svg id="playIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            <svg id="pauseIcon" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        </button>
+                        <button class="mc-btn" id="mcNext" title="Selanjutnya" style="display:none;">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zm2.5-6 5.5 4V8l-5.5 4zm7.5 6h2V6h-2v12z"/></svg>
+                        </button>
+                        <button class="mc-btn mc-loop" id="mcLoop" title="Loop">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+                        </button>
+                        <div class="mc-volume-wrap">
+                            <button class="mc-btn" id="mcMute" title="Mute">
+                                <svg id="volIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+                            </button>
+                            <input type="range" class="mc-volume" id="mcVolume" min="0" max="1" step="0.01" value="0.7"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════ VIDEO ═══════════ -->
+        <section id="video" class="section">
+            <div class="section-wrap">
+                <div class="section-header">
+                    <span class="section-label">Video</span>
+                    <h2 class="section-heading">Video Perjalanan</h2>
+                    <p class="section-sub">Video Vlog Perjalanan Menuju Tempat Apresiasi</p>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-frame-wrap">
+                        <iframe
+                            class="video-frame"
+                            src="https://youtu.be/Xh-2i_NDFew?si=H6fRRKrWkrSlb8UR"
+                            title="Video Pembelajaran"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-meta">
+                        <div class="video-badge">Vlog</div>
+                        <h3 class="video-title">Perjalanan Dari Sekolah Menuju Tempat Apresiasi</h3>
+                        <p class="video-desc">Video berisi perjalanan 4 orang yaitu Cakra, Ezra, Bryan, dan Valga dari sekolah menuju tempat apresiasi dengan menggunakan motor, yang menggambarkan kebersamaan, suasana perjalanan, serta momen-momen yang mereka alami sepanjang perjalanan tersebut.</p>
+                        <div class="video-stats">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════ GAMBAR — 3D MODEL + GALERI ═══════════ -->
+        <section id="gambar" class="section">
+            <div class="section-wrap">
+                <div class="section-header">
+                    <span class="section-label">Visualisasi 3D</span>
+                    <h2 class="section-heading">Model 3D</h2>   
+                    <p class="section-sub">Putar, zoom, dan eksplorasi model 3D Gereja Blenduk secara langsung</p>
+                </div>
+
+                <!-- 3D Viewer -->
+                <div class="model-layout">
+                    <div class="model-canvas-wrap">
+                        <div class="model-canvas" id="modelViewer">
+                            <div class="model-loading" id="modelLoading">
+                                <div class="loading-spinner"></div>
+                                <span id="loadingText">Memuat model…</span>
+                            </div>
+                        </div>
+                        <div class="model-overlay-hint">
+                            <span>Drag · Scroll Zoom</span>
+                            <span>Pinch Zoom · Finger Rotate</span>
+                        </div>
+                    </div>
+                    <div class="model-sidebar">
+                        <h3 class="sidebar-title">Kontrol Model</h3>
+                        <div class="model-btns">
+                            <button class="model-btn" id="resetBtn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                                Reset
+                            </button>
+                            <button class="model-btn active-btn" id="autoRotateBtn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                                Putar Otomatis
+                            </button>
+                            <button class="model-btn" id="zoomInBtn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                                Zoom In
+                            </button>
+                            <button class="model-btn" id="zoomOutBtn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                                Zoom Out
+                            </button>
+                        </div>
+                        <div class="model-info-box">
+                            <div class="info-row"><span class="info-label">File</span><span class="info-val">Model.glb</span></div>
+                            <div class="info-row"><span class="info-label">Format</span><span class="info-val">glTF Binary</span></div>
+                            <div class="info-row"><span class="info-label">Engine</span><span class="info-val">Three.js r128</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GALERI FOTO 5 -->
+                <div class="gallery-section">
+                    <div class="gallery-header">
+                        <span class="section-label">Galeri Foto</span>
+                        <h3 class="gallery-title">Dokumentasi & Denah Gereja Blenduk</h3>
+                    </div>
+                    <div class="gallery-grid">
+                        <div class="gallery-card" onclick="openLightbox('gambar',0)">
+                            <div class="gallery-img-wrap">
+                                <img src="Ft Dokumentasi 1.jpeg" alt="Dokumntasi 1" class="gallery-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                                <div class="img-placeholder" style="display:none">><p>Dokumen 1</p></div>
+                                <div class="gallery-overlay"><span class="gallery-zoom-icon">x</span></div>
+                            </div>
+                            <div class="gallery-caption">
+                                <span class="caption-num">01</span>
+                                <div><p class="caption-title">Dokumentasi Foto 1</p><p class="caption-desc"></p></div>
+                            </div>
+                        </div>
+                        <div class="gallery-card" onclick="openLightbox('gambar',1)">
+                            <div class="gallery-img-wrap">
+                                <img src="Ft Dokumentasi 2.jpeg" alt="Dokumentasi 2" class="gallery-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                                <div class="img-placeholder" style="display:none"><p>Dokumentasi Foto 2</p></div>
+                                <div class="gallery-overlay"><span class="gallery-zoom-icon">x</span></div>
+                            </div>
+                            <div class="gallery-caption">
+                                <span class="caption-num">02</span>
+                                <div><p class="caption-title">Dokumentasi Foto 2</p><p class="caption-desc"></p></div>
+                            </div>
+                        </div>
+                        <div class="gallery-card" onclick="openLightbox('gambar',2)">
+                            <div class="gallery-img-wrap">
+                                <img src="Ft Denah Lt Bawah.png" alt="Interior" class="gallery-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                                <div class="img-placeholder" style="display:none"><span>✨</span><p>Denah Lantai Bawah</p></div>
+                                <div class="gallery-overlay"><span class="gallery-zoom-icon">x</span></div>
+                            </div>
+                            <div class="gallery-caption">
+                                <span class="caption-num">03</span>
+                                <div><p class="caption-title">Denah Lantai Bawah</p><p class="caption-desc">Denah bangunan lantai bawah gereja Blenduk</p></div>
+                            </div>
+                        </div>
+                        <div class="gallery-card" onclick="openLightbox('gambar',3)">
+                            <div class="gallery-img-wrap">
+                                <img src="Ft Denah Balkon lt atas.png" alt="Lantai Atas" class="gallery-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                                <div class="img-placeholder" style="display:none"><span>🔭</span><p>Lantai Atas</p></div>
+                                <div class="gallery-overlay"><span class="gallery-zoom-icon">x</span></div>
+                            </div>
+                            <div class="gallery-caption">
+                                <span class="caption-num">04</span>
+                                <div><p class="caption-title">Lantai Atas</p><p class="caption-desc">Denah bangunan lantai atas balkon gereja Blenduk</p></div>
+                            </div>
+                        </div>
+                        <div class="gallery-card" onclick="openLightbox('gambar',4)">
+                            <div class="gallery-img-wrap">
+                                <img src="Ft Tampak Depan.png" alt="Tampak Depan" class="gallery-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                                <div class="img-placeholder" style="display:none"><span>🌿</span><p>Tampak Depan Gereja Blenduk</p></div>
+                                <div class="gallery-overlay"><span class="gallery-zoom-icon">x</span></div>
+                            </div>
+                            <div class="gallery-caption">
+                                <span class="caption-num">05</span>
+                                <div><p class="caption-title">Tampak Depan Gereja Blenduk</p><p class="caption-desc">Tampak depan bangunan gereja Blenduk</p></div>
+                            </div>
+                        </div>
+                        <div class="gallery-card" onclick="openLightbox('gambar',5)">
+                            <div class="gallery-img-wrap">
+                                <img src="Ft Potongan.png" alt="Potongan" class="gallery-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                                <div class="img-placeholder" style="display:none"><span>📐</span><p>Potongan Bangunan</p></div>
+                                <div class="gallery-overlay"><span class="gallery-zoom-icon">x</span></div>
+                            </div>
+                            <div class="gallery-caption">
+                                <span class="caption-num">06</span>
+                                <div><p class="caption-title">Potongan Bangunan</p><p class="caption-desc">Gambar potongan bangunan gereja Blenduk</p></div>
+                            </div>
+                    </div>
+
+            </div>
+        </section>
+    <!-- Lightbox Script -->
+    <script>
+        const lbSets = {
+            gambar: [
+                { src: 'Ft Dokumentasi 1.jpeg', caption: '01 — Dokumentasi 1' },
+                { src: 'Ft Dokumentasi 2.jpeg', caption: '02 — Dokumentasi 2' },
+                { src: 'Ft Denah Lt Bawah.png', caption: '03 — Denah Lantai Bawah' },
+                { src: 'Ft Denah Lt Atas.png', caption: '04 — Denah Lantai Atas / Balkon' },
+                { src: 'Ft Tampak Depan.png', caption: '05 — Tampak Depan Gereja Blenduk' },
+                { src: 'Ft Potongan.png', caption: '06 — Potongan Bangunan Gereja Blenduk' }
+            ]
+        };
+        let lbCurrent = 0, lbSet = [];
+
+        function openLightbox(set, idx) {
+            lbSet = lbSets[set] || [];
+            lbCurrent = idx;
+            const lb = document.getElementById('lightbox');
+            document.getElementById('lbImg').src = lbSet[idx].src;
+            document.getElementById('lbCaption').textContent = lbSet[idx].caption;
+            lb.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+        function lbNav(dir) {
+            lbCurrent = (lbCurrent + dir + lbSet.length) % lbSet.length;
+            document.getElementById('lbImg').src = lbSet[lbCurrent].src;
+            document.getElementById('lbCaption').textContent = lbSet[lbCurrent].caption;
+        }
+        document.addEventListener('keydown', (e) => {
+            const lb = document.getElementById('lightbox');
+            if (!lb.classList.contains('open')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') lbNav(-1);
+            if (e.key === 'ArrowRight') lbNav(1);
+        });
+    </script>
+
+        <!-- ═══════════ IDENTITAS DIRI ═══════════ -->
+        <section id="identitas" class="section">
+            <div class="section-wrap">
+                <div class="section-header">
+                    <span class="section-label">Identitas Diri</span>
+                    <h2 class="section-heading">Tentang Kami</h2>
+                    <p class="section-sub">Dokumentasi foto anggota kelompok</p>
+                </div>
+
+                <div class="identity-grid">
+                    <!-- Orang 1 -->
+                    <div class="identity-card">
+                        <div class="identity-img-wrap">
+                            <img src="FCakra.jpeg" alt="Foto 1" class="identity-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                            <div class="identity-placeholder" style="display:none"><span>👤</span></div>
+                            <div class="identity-badge">07</div>
+                        </div>
+                        <div class="identity-info">
+                            <h4 class="identity-name">Cakra Dwi Nurwahyu</h4>
+                            <p class="identity-role">XII 5</p>
+                        </div>
+                    </div>
+
+                    <!-- Orang 2 -->
+                    <div class="identity-card">
+                        <div class="identity-img-wrap">
+                            <img src="FEzra.jpeg" alt="Foto 2" class="identity-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                            <div class="identity-placeholder" style="display:none"><span>👤</span></div>
+                            <div class="identity-badge">09</div>
+                        </div>
+                        <div class="identity-info">
+                            <h4 class="identity-name">Ezra Shodry Alviansyah</h4>
+                            <p class="identity-role">XII 5</p>
+                        </div>
+                    </div>
+
+                    <!-- Orang 3 -->
+                    <div class="identity-card">
+                        <div class="identity-img-wrap">
+                            <img src="FBryan.jpeg" alt="Foto 3" class="identity-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                            <div class="identity-placeholder" style="display:none"><span>👤</span></div>
+                            <div class="identity-badge">22</div>
+                        </div>
+                        <div class="identity-info">
+                            <h4 class="identity-name">M. Wildane Bryan Kisisina</h4>
+                            <p class="identity-role">XII 5</p>
+                        </div>
+                    </div>
+
+                    <!-- Orang 4 -->
+                    <div class="identity-card">
+                        <div class="identity-img-wrap">
+                            <img src="FValga.jpeg" alt="Foto 4" class="identity-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                            <div class="identity-placeholder" style="display:none"><span>👤</span></div>
+                            <div class="identity-badge">36</div>
+                        </div>
+                        <div class="identity-info">
+                            <h4 class="identity-name">Valga Gilang Dirga Saputra</h4>
+                            <p class="identity-role">XII 5</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+<!-- ═══════════ DAFTAR PUSTAKA ═══════════ -->
+<section id="daftarpustaka" class="section">
+    <div class="section-wrap">
+        <div class="section-header">
+            <span class="section-label">Referensi</span>
+            <h2 class="section-heading">Daftar Pustaka</h2>
+            <p class="section-sub">Sumber-sumber yang digunakan dalam pembuatan karya ini</p>
+        </div>
+
+        <div class="bibliography-container">
+            <div class="bibliography-list">
+                <div class="bib-item">
+                    <span class="bib-number">[1]</span>
+                    <div class="bib-content">
+                        <p class="bib-title">Model 3D Gereja Blenduk</p>
+                        <p class="bib-detail">Edward. (2018). Gereja Blenduk, Semarang. Sketchfab.</em> Diakses dari <a href="https://skfb.ly/6wWsw" target="_blank" class="bib-link">[Link 3D Model]</a></p>
+                    </div>
+                </div>
+
+                <div class="bib-item">
+                    <span class="bib-number">[2]</span>
+                    <div class="bib-content">
+                        <p class="bib-title">Denah Gereja Blenduk</p>
+                        <p class="bib-detail">Moedjiono, Indriastjario (2011).</em>Mengenal Gereja Blenduk Semarang Sebagai Salah Satu Land Mark Kota Semarang</em> Semarang: Unniversitas Dipenogoro Semarang <a href="https://media.neliti.com/media/publications/269242-mengenal-gereja-blenduk-sebagai-salah-sa-1576bd01.pdf" target="_blank" class="bib-link">[Lihat Buku]</a></p>
+                    </div>
+                </div>
+
+                <div class="bib-item">
+                    <span class="bib-number">[3]</span>
+                    <div class="bib-content">
+                        <p class="bib-title">Music / Lagu</p>
+                        <p class="bib-detail">The Stranglers (1981). ℗ 1981 Parlophone Records Ltd, a Warner Music Group Company <a href="https://youtu.be/W2o_HupXq1g?si=K3Rcrk0FF6GAj1U5" target="_blank" class="bib-link">[Original Music]</a><a href="https://youtu.be/GmxkNB-QihI?si=-JR8090YOfxN4fKA" target="_blank" class="bib-link">[Slowed + Reverb Music]</a></p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <button class="lb-close" onclick="closeLightbox()">✕</button>
+            <button class="lb-prev" onclick="event.stopPropagation();lbNav(-1)">&#8249;</button>
+            <button class="lb-next" onclick="event.stopPropagation();lbNav(1)">&#8250;</button>
+            <div class="lb-content" onclick="event.stopPropagation()">
+                <img src="" alt="" id="lbImg"/>
+                <p id="lbCaption"></p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <!-- App Scripts -->
+    <script src="navigation.js"></script>
+    <script src="slides.js"></script>
+    <script src="model-viewer.js"></script>
+
+    <!-- Persistent Audio Player -->
+    <audio id="audioEl" preload="auto" src="Golden Brown - The Stranglers (slowed + reverb) - (320 Kbps).mp3.mpeg"></audio>
+
+    <script>
+    // ── Music Player — Single Track Fixed ──
+    (function() {
+        const audio    = document.getElementById('audioEl');
+        const disc     = document.getElementById('musicDisc');
+        const title    = document.getElementById('musicTitle');
+        const artist   = document.getElementById('musicArtist');
+        const playBtn  = document.getElementById('mcPlay');
+        const playIco  = document.getElementById('playIcon');
+        const pauseIco = document.getElementById('pauseIcon');
+        const loopBtn  = document.getElementById('mcLoop');
+        const muteBtn  = document.getElementById('mcMute');
+        const volSlider= document.getElementById('mcVolume');
+        const progWrap = document.getElementById('musicProgress');
+        const progFill = document.getElementById('musicProgressFill');
+        const progThumb= document.getElementById('musicProgressThumb');
+        const curTime  = document.getElementById('musicCurrent');
+        const durTime  = document.getElementById('musicDuration');
+
+        let isLooping = false;
+
+        function fmt(s) {
+            if (isNaN(s)) return '0:00';
+            const m = Math.floor(s / 60), sec = Math.floor(s % 60);
+            return m + ':' + String(sec).padStart(2,'0');
+        }
+
+        function setPlaying(playing) {
+            playIco.style.display  = playing ? 'none'  : 'block';
+            pauseIco.style.display = playing ? 'block' : 'none';
+            disc.classList.toggle('spinning', playing);
+        }
+
+        // Play/Pause
+        playBtn.addEventListener('click', () => {
+            if (audio.paused) { 
+                audio.play(); 
+                setPlaying(true); 
+            }
+            else { 
+                audio.pause(); 
+                setPlaying(false); 
+            }
+        });
+
+        // Loop
+        loopBtn.addEventListener('click', () => {
+            isLooping = !isLooping;
+            audio.loop = isLooping;
+            loopBtn.classList.toggle('active-loop', isLooping);
+        });
+
+        // Ended
+        audio.addEventListener('ended', () => {
+            if (!isLooping) setPlaying(false);
+        });
+
+        // Volume
+        volSlider.addEventListener('input', () => {
+            audio.volume = parseFloat(volSlider.value);
+            audio.muted = false;
+        });
+        muteBtn.addEventListener('click', () => {
+            audio.muted = !audio.muted;
+            muteBtn.style.opacity = audio.muted ? '0.4' : '1';
+        });
+
+        // Progress
+        audio.addEventListener('timeupdate', () => {
+            if (!audio.duration) return;
+            const pct = (audio.currentTime / audio.duration) * 100;
+            progFill.style.width  = pct + '%';
+            progThumb.style.left  = pct + '%';
+            curTime.textContent   = fmt(audio.currentTime);
+            durTime.textContent   = fmt(audio.duration);
+        });
+        audio.addEventListener('loadedmetadata', () => {
+            durTime.textContent = fmt(audio.duration);
+        });
+
+        // Seek on click/drag
+        let seeking = false;
+        function seek(e) {
+            if (!audio.duration) return;
+            const rect = progWrap.getBoundingClientRect();
+            const x    = Math.max(0, Math.min(e.clientX - rect.left, rect.width));
+            audio.currentTime = (x / rect.width) * audio.duration;
+        }
+        progWrap.addEventListener('mousedown', (e) => { seeking = true; seek(e); });
+        document.addEventListener('mousemove', (e) => { if (seeking) seek(e); });
+        document.addEventListener('mouseup',   ()  => { seeking = false; });
+        progWrap.addEventListener('touchstart', (e) => { seeking = true; seek(e.touches[0]); }, {passive:true});
+        document.addEventListener('touchmove',  (e) => { if (seeking) seek(e.touches[0]); }, {passive:true});
+        document.addEventListener('touchend',   ()  => { seeking = false; });
+
+        // Keyboard shortcut: Space = play/pause (only when not in other input)
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+            if (e.code === 'Space') {
+                e.preventDefault();
+                playBtn.click();
+            }
+        });
+
+        // Initialize volume
+        audio.volume = parseFloat(volSlider.value);
+    })();
+    </script>
+</body>
+</html>
